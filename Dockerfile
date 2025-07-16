@@ -20,4 +20,5 @@ COPY --from=build /app/target/release/movie-site-finder /app/server
 EXPOSE 8080
 
 # Run the application, using $PORT from Render
-CMD ["/app/server", "--port", "${PORT}", "-d"]
+#CMD ["/app/server", "--port", "${PORT}", "-d"]
+CMD ["/bin/sh", "-c", "/app/server --port $PORT -d"]
