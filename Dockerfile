@@ -21,4 +21,4 @@ EXPOSE 8080
 
 # Run the application, using $PORT from Render
 #CMD ["/app/server", "--port", "${PORT}", "-d"]
-CMD ["/bin/sh", "-c", "/app/server --port $PORT -d"]
+CMD ["/bin/sh", "-c", "/app/server --port 8080 -d"]
