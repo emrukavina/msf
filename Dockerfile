@@ -1,5 +1,5 @@
 # Build stage
-FROM rust:1.83.0-bookworm AS build
+FROM rust:1.88.0-bookworm AS build
 
 # Set working directory
 WORKDIR /app
