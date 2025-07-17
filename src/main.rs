@@ -54,7 +54,7 @@ async fn redirect() -> impl Responder {
 async fn main() -> io::Result<()> {
     let opts = Options::parse();
 
-    let addr = format!("127.0.0.1:{}", opts.port);
+    let addr = format!("0.0.0.0:{}", opts.port);
     println!("Starting server at http://{}", addr);
 
     HttpServer::new(|| {
