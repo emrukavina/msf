@@ -8,6 +8,7 @@ Just visit:
 
 It will automatically redirect you to a working movie site.
 
+Note: The serrvice is hosted fof free, sometimess it can take up to a minute for it to find a site, but when it does, at least u know that that site works. Its kinda; "I check whats online and whats not so u dont have to :)"
 🛠️ Building & Running with Docker
 =================================
 docker build -t movie-site-finder .
