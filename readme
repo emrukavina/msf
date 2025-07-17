@@ -1,3 +1,11 @@
 An available movie site finder.
 
 Just go to https://movies.emrukavina.com adn it will automaticly reroute u to the first available free movies site.
+
+Building
+========
+docker build -t movie-site-finder .
+docker run -p 8080:8080 movie-site-finder
+
+docker run -p 8080:8080 -e PORT=8080 movie-site-finder
+docker run -p 8080:8080 -e PORT=8080 movie-site-finder -d

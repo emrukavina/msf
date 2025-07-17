@@ -27,17 +27,7 @@ RUN cargo build --release
 
 # Expose the port (Render will override with $PORT)
 EXPOSE 8080
-
-# Run the application, using $PORT from Render
-#CMD ["target/release/movie-site-finder", "--port", "$PORT", "-d"]
-CMD target/release/movie-site-finder --port $PORT -d
-#ENTRYPOINT /bin/sh -c "target/release/movie-site-finder -p ${PORT} -d"
-#CMD ["/bin/sh", "-c", "/app/server --port 8080 -d"]
+                                            
+CMD target/release/movie-site-finder --port $PORT
 
 
-# docker build -t movie-site-finder .
-# docker run -p 8080:8080 movie-site-finder
-# docker logs <container-id>
-
-##Environment Variables:
-# docker run -p 8080:8080 -e KEY=VALUE movie-site-finder
