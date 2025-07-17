@@ -1,4 +1,5 @@
-pub const URLS: [&str; 29] = [
+pub const URLS: [&str; 30] = [
+    "https://free-movies.net",
     "https://lookmovie.to",
     "https://lookmovie1.to",
     "https://lookmovie2.to",
