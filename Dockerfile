@@ -28,6 +28,6 @@ RUN cargo build --release
 # Expose the port (Render will override with $PORT)
 EXPOSE 8080
                                             
-CMD target/release/movie-site-finder --port $PORT
+CMD target/release/movie-site-finder --port $PORT -d
 
 

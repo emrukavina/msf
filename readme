@@ -1,11 +1,23 @@
-An available movie site finder.
+🎬 Movie Site Finder
+====================
 
-Just go to https://movies.emrukavina.com adn it will automaticly reroute u to the first available free movies site.
+Movie Site Finder is a simple web service that redirects you to the first currently available free movie site.
 
-Building
-========
+Just visit:
+👉 https://emrukavina.com/msf
+
+It will automatically redirect you to a working movie site.
+
+🛠️ Building & Running with Docker
+=================================
 docker build -t movie-site-finder .
 docker run -p 8080:8080 movie-site-finder
 
+With environment variable (optional):
 docker run -p 8080:8080 -e PORT=8080 movie-site-finder
-docker run -p 8080:8080 -e PORT=8080 movie-site-finder -d
+
+The app listens on port 8080 by default, but you can override it using the PORT environment variable.
+
+TODO
+====
+- make it read from a .txt instead of hardcoded links
