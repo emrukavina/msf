@@ -29,7 +29,9 @@ RUN cargo build --release
 EXPOSE 8080
 
 # Run the application, using $PORT from Render
-CMD ["target/release/movie-site-finder", "--port", "$PORT", "-d"]
+#CMD ["target/release/movie-site-finder", "--port", "$PORT", "-d"]
+CMD target/release/movie-site-finder --port $PORT -d
+#ENTRYPOINT /bin/sh -c "target/release/movie-site-finder -p ${PORT} -d"
 #CMD ["/bin/sh", "-c", "/app/server --port 8080 -d"]
 
 
