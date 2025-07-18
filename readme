@@ -20,6 +20,10 @@ docker run -p 8080:8080 -e PORT=8080 movie-site-finder
 
 The app listens on port 8080 by default, but you can override it using the PORT environment variable.
 
+flyctl launch
+
+flyctl deploy   (for updating)
+
 TODO
 ====
 - make it read from a .txt instead of hardcoded links
